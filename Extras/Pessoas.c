@@ -71,21 +71,3 @@ int main()
 
     return 0;
 }
-
-typedef struct
-{
-    char nome2[40];
-    int idade2;
-    int altura2;
-} Pessoa2;
-
-int main()
-{
-    Pessoa2 *p;
-    p = (Pessoa2 *)malloc(sizeof(Pessoa2));
-
-    p = (Pessoa2 *)realloc(p, 2 * sizeof(Pessoa));
-
-    p = (Pessoa *)realloc(p, (contador + 1) * sizeof(Pessoa));
-    return 0;
-}
