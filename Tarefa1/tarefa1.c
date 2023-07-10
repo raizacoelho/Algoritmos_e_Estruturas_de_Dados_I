@@ -64,7 +64,7 @@ char * longestNiceSubstring(char * s) {
 }
 
 int main() {
-    char s[100], *p = NULL, tamanho = 0; // string com limite de tamanho 100, como indicado.
+    char s[100], *p = NULL; // string com limite de tamanho 100, como indicado.
 
     p = s; // link do ponteiro *p com a string s;
 
@@ -73,15 +73,7 @@ int main() {
 
     printf("A frase eh: %s\n", p);
  
-    // printf("A substring mais longa e 'nice' dessa frase eh: %s", longestNiceSubstring(p));
-    
-    p = longestNiceSubstring(p);
-    tamanho = strlen(p);
-
-    printf("A substring mais longa e 'nice' dessa frase eh: ");
-    for (int i = 0; i < tamanho - 1; i++){
-        printf("%c", p[i]);
-    }
+    printf("A substring mais longa e 'nice' dessa frase eh: %s", longestNiceSubstring(p));
 
     free(p); 
 
