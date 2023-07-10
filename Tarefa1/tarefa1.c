@@ -45,7 +45,7 @@ char * longestNiceSubstring(char * s) {
         return "\0";                        // na copia da substring para outro ponteiro.
     }    
         
-    LNS = (char *) malloc((comprimento)*sizeof(char)); // aloca espaço para a substring gerada (comprimento +1 para garantir espaço para o '\0');
+    LNS = (char *) malloc((comprimento + 1)*sizeof(char)); // aloca espaço para a substring gerada (comprimento +1 para garantir espaço para o '\0');
 
     if (LNS == NULL) { // confere se é possível alocar memória para o ponteiro.
         printf("Não foi possível alocar memória.\n");
@@ -74,8 +74,6 @@ int main() {
     printf("A frase eh: %s\n", p);
  
     printf("A substring mais longa e 'nice' dessa frase eh: %s", longestNiceSubstring(p));
-
-    free(p); 
 
     return 0;
 }
