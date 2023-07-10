@@ -7,9 +7,9 @@
             "request": "launch",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "C:\\MinGW\\bin",
             "environment": [],
-            "externalConsole": true,
+            "externalConsole": false,
             "linux": {
                 "MIMode": "gdb",
                 "miDebuggerPath": "gdb",
@@ -22,7 +22,7 @@
             },
             "windows": {
                 "MIMode": "gdb",
-                "miDebuggerPath": "gdb.exe",
+                "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
                 "program": "${workspaceFolder}/output/main.exe"
             },
             "preLaunchTask": "build"
